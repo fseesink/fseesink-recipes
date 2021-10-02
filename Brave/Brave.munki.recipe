@@ -27,7 +27,7 @@
 			<key>developer</key>
 			<string>Brave Software, Inc.</string>
 			<key>display_name</key>
-			<string>Brave (Intel x64)</string>
+			<string>Brave</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
