@@ -23,7 +23,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%-%version%.dmg</string>
 				<key>url</key>
 				<string>https://laptop-updates.brave.com/latest/osx/release</string>
 			</dict>
@@ -51,7 +51,7 @@
 				<key>input_plist_path</key>
 				<string>%pathname%/Brave Browser.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
-				<string>CFBundleVersion</string>
+				<string>CFBundleShortVersionString</string>
 			</dict>
 			<key>Processor</key>
 			<string>Versioner</string>
