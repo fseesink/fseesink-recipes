@@ -15,9 +15,7 @@
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
-		<string>Brave.arm64</string>
-		<key>force_munkiimport</key>
-		<true />
+		<string>Brave</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
@@ -25,17 +23,17 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Next generation ARM64 Brave browser for Android, Linux, macOS, Windows.  (ARM64 version)</string>
+			<string>Secure, Open-Source browser. (ARM64 version)</string>
 			<key>developer</key>
 			<string>Brave Software, Inc.</string>
 			<key>display_name</key>
-			<string>Brave</string>
+			<string>Brave (ARM64)</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
             <key>supported_architectures</key>
-			<array>
+            <array>
 				<string>arm64</string>
             </array>
 		</dict>

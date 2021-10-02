@@ -23,17 +23,17 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Next generation Brave browser for Android, Linux, macOS, Windows.  (Intel x64 version)</string>
+			<string>Secure, Open-Source browser. (Intel x64 version)</string>
 			<key>developer</key>
 			<string>Brave Software, Inc.</string>
 			<key>display_name</key>
-			<string>Brave</string>
+			<string>Brave (Intel x64)</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
             <key>supported_architectures</key>
-			<array>
+            <array>
 				<string>x86_64</string>
 				<string>arm64</string>
             </array>
