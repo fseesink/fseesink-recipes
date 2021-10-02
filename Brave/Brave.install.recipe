@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Installs the latest version of Brave.</string>
+	<string>Installs the latest Intel x64 version of Brave.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.install.Brave</string>
 	<key>Input</key>
