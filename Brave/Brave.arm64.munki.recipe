@@ -16,6 +16,8 @@
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>Brave.arm64</string>
+		<key>force_munkiimport</key>
+		<true />
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
