@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest Intel x64 version of draw.io and imports it into Munki.</string>
+	<string>Downloads the latest Universal (Intel x64/ARM64) version of draw.io and imports it into Munki.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.munki.draw.io</string>
 	<key>Input</key>
@@ -21,11 +21,11 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Official Intel x64 electron build of diagrams.net</string>
+			<string>Official Univeral (Intel x64/ARM64) electron build of diagrams.net</string>
 			<key>developer</key>
 			<string>JGraph Ltd</string>
 			<key>display_name</key>
-			<string>draw.io (Intel x64)</string>
+			<string>draw.io (Univeral)</string>
 			<key>name</key>
 			<string>%NAME%</string>
 			<key>unattended_install</key>

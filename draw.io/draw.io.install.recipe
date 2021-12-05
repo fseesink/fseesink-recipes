@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Installs the latest Intel x64 version of draw.io.</string>
+	<string>Installs the latest Universal (Intel x64/ARM64) version of draw.io.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.install.draw.io</string>
 	<key>Input</key>
