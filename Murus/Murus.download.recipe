@@ -20,8 +20,10 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+				<!--
 				<key>asset_regex</key>
 				<string>murus-.*\.zip$</string>
+				-->
 				<key>github_repo</key>
 				<string>TheMurusTeam/Murus</string>
 			</dict>
