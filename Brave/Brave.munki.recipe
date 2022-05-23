@@ -44,6 +44,7 @@
 	<string>com.github.fseesink.download.Brave</string>
 	<key>Process</key>
 	<array>
+		<!--
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -56,6 +57,7 @@
 			<key>Processor</key>
 			<string>MunkiPkginfoMerger</string>
 		</dict>
+		-->
 		<dict>
 			<key>Arguments</key>
 			<dict>
