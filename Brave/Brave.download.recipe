@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest Intel x64 version of Brave.</string>
+	<string>Downloads the latest version of Brave.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.download.Brave</string>
 	<key>Input</key>
@@ -25,7 +25,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>https://laptop-updates.brave.com/latest/osx/release</string>
+				<string>https://laptop-updates.brave.com/latest/osx</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
@@ -40,7 +40,7 @@
 				<key>input_path</key>
 				<string>%pathname%/Brave Browser.app</string>
 				<key>requirement</key>
-				<string>identifier "com.brave.Browser" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = KL8N8XSYF4</string>
+				<string>identifier "com.brave.Browser" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
@@ -51,7 +51,7 @@
 				<key>input_plist_path</key>
 				<string>%pathname%/Brave Browser.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
+				<string>CFBundleVersion</string>
 			</dict>
 			<key>Processor</key>
 			<string>Versioner</string>

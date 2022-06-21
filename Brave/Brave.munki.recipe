@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest Intel x64 version of Brave and imports it into Munki.</string>
+	<string>Downloads the latest version of Brave and imports it into Munki.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.munki.Brave</string>
 	<key>Input</key>
@@ -23,7 +23,7 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Secure, Open-Source browser. (Intel x64 version)</string>
+			<string> </string>
 			<key>developer</key>
 			<string>Brave Software, Inc.</string>
 			<key>display_name</key>
@@ -32,10 +32,6 @@
 			<string>%NAME%</string>
 			<key>unattended_install</key>
 			<true/>
-            <key>supported_architectures</key>
-            <array>
-				<string>x86_64</string>
-            </array>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
@@ -44,7 +40,6 @@
 	<string>com.github.fseesink.download.Brave</string>
 	<key>Process</key>
 	<array>
-		<!--
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -57,7 +52,6 @@
 			<key>Processor</key>
 			<string>MunkiPkginfoMerger</string>
 		</dict>
-		-->
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -65,10 +59,8 @@
 				<string>%pathname%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
-				<!--
 				<key>version_comparison_key</key>
-				<string>CFBundleShortVersionString</string>
-				-->
+				<string>CFBundleVersion</string>
 			</dict>
 			<key>Processor</key>
 			<string>MunkiImporter</string>
