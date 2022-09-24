@@ -40,11 +40,11 @@ Use either x64 or arm64 for DOWNLOAD_ARCH
 			<string>Ferdium</string>
 			<key>name</key>
 			<string>%NAME%</string>
-			<key>unattended_install</key>
             <key>supported_architectures</key>
             <array>
                 <string>%ARCHITECTURE%</string>
             </array>
+			<key>unattended_install</key>
 			<true/>
 		</dict>
 	</dict>
