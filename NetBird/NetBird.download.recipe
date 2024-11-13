@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Original recipes created with Recipe Robot v2.3.1 (https://github.com/homebysix/recipe-robot) for Moonlight, then adjusted</string>
+	<key>Description</key>
+	<string>Downloads the latest version of NetBird.</string>
+	<key>Identifier</key>
+	<string>com.github.fseesink.download.NetBird</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>NetBird</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>asset_regex</key>
+				<string>.*darwin\.pkg$</string>
+				<key>github_repo</key>
+				<string>netbirdio/netbird</string>
+			</dict>
+			<key>Processor</key>
+			<string>GitHubReleasesInfoProvider</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%-%version%.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+	</array>
+</dict>
+</plist>
