@@ -26,6 +26,8 @@
 				<string>.*universal\.dmg$</string>
 				<key>github_repo</key>
 				<string>brave/brave-browser</string>
+				<key>latest_only</key>
+				<string>true</string>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
