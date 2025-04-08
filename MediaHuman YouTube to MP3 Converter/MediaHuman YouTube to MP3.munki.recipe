@@ -5,11 +5,19 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of MediaHuman YouTube to MP3 and imports it into Munki.</string>
+	<string>Downloads the latest version of MediaHuman YouTube to MP3 and imports it into Munki.
+	
+Use either x86_64 or arm64 for ARCHITECTURE key.
+Use either "" (blank) or "-arm" for DOWNLOAD_ARCH	
+	</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.munki.MediaHuman-YouTubetoMP3</string>
 	<key>Input</key>
 	<dict>
+        <key>ARCHITECTURE</key>
+        <string>x86_64</string>
+		<key>DOWNLOAD_ARCH</key>
+		<string></string>
 		<key>MUNKI_REPO_SUBDIR</key>
 		<string>apps/%NAME%</string>
 		<key>NAME</key>
@@ -28,6 +36,10 @@
 			<string>YouTube to MP3</string>
 			<key>name</key>
 			<string>%NAME%</string>
+            <key>supported_architectures</key>
+            <array>
+                <string>%ARCHITECTURE%</string>
+            </array>
 			<key>unattended_install</key>
 			<true/>
 		</dict>

@@ -5,13 +5,20 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of MediaHuman YouTube to MP3.</string>
+	<string>Downloads the latest version of MediaHuman YouTube to MP3.
+	
+DOWNLOAD_ARCH
+- Set to blank for x86_64 (default)
+- Set to "-arm" for Apple Silicon	
+	</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.download.MediaHuman-YouTubetoMP3</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>YouTube to MP3</string>
+        <key>DOWNLOAD_ARCH</key>
+        <string></string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
@@ -21,9 +28,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%NAME%%DOWNLOAD_ARCH%-%version%.dmg</string>
 				<key>url</key>
-				<string>https://www.mediahuman.com/download/YouTubeToMP3.dmg</string>
+				<string>https://www.mediahuman.com/download/YouTubeToMP3%DOWNLOAD_ARCH%.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
