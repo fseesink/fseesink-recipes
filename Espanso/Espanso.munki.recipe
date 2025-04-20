@@ -15,7 +15,7 @@
 		<key>NAME</key>
 		<string>Espanso</string>
 		<key>pkginfo</key>
-		<key>MUNKI_ARCH</key>
+		<key>ARCHITECTURE</key>
 		<string>arm64</string>
 		<dict>
 			<key>catalogs</key>
@@ -30,12 +30,12 @@
 			<string>Espanso</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>%ARCHITECTURE%</string>
+			</array>
 			<key>unattended_install</key>
 			<true/>
-			<key>supported_architectures</key>
-				<array>
-					<string>%MUNKI_ARCH%</string>
-				</array>
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
