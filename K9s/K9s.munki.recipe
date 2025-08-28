@@ -5,7 +5,7 @@
         <key>Description</key>
         <string>Downloads the current release version of K9s and imports into Munki.</string>
         <key>Identifier</key>
-        <string>com.github.seesink.munki.K9s</string>
+        <string>com.github.fseesink.munki.K9s</string>
         <key>Input</key>
         <dict>
             <key>NAME</key>
@@ -47,7 +47,7 @@
         <key>MinimumVersion</key>
         <string>0.2.0</string>
         <key>ParentRecipe</key>
-        <string>com.github.seesink.pkg.K9s</string>
+        <string>com.github.fseesink.pkg.K9s</string>
         <key>Process</key>
         <array>
             <dict>
