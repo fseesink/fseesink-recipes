@@ -24,9 +24,9 @@
                 <key>Arguments</key>
                 <dict>
                     <key>url</key>
-                    <string>https://gitlab.com/gitlab-org/cli/-/releases</string>
+                    <string>https://gitlab.com/gitlab-org/cli/-/releases/permalink/latest</string>
                     <key>re_pattern</key>
-                    <string>&lt;a href="(?P&lt;url&gt;https://gitlab.com/gitlab-org/cli/-/releases/v(?P&lt;version&gt;[0-9\.]*)/downloads/glab_(?P=version)_darwin_%DOWNLOAD_ARCH%.tar.gz)".*&gt;</string>
+                    <string>&lt;a href="(?P&lt;url&gt;https://gitlab.com/gitlab-org/cli/-/releases/v(?P&lt;version&gt;[0-9\.]*)/downloads/glab_[0-9\.]*_darwin_%DOWNLOAD_ARCH%.tar.gz)".*&gt;</string>
                 </dict>
             </dict>
             <dict>
