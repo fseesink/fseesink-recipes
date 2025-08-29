@@ -20,15 +20,13 @@
         <array>
             <dict>
                 <key>Processor</key>
-                <string>GitHubReleasesInfoProvider</string>
+                <string>URLTextSearcher</string>
                 <key>Arguments</key>
                 <dict>
-                    <key>asset_regex</key>
-                    <string>get.helm.sh/helm-v(?P&lt;version&gt;[0-9\.]*)-darwin-%DOWNLOAD_ARCH%.tar.gz</string>
-                    <key>github_repo</key>
-                    <string>helm/helm</string>
-                    <key>latest_only</key>
-                    <string>true</string>
+                    <key>url</key>
+                    <string>https://github.com/helm/helm/releases/latest</string>
+                    <key>re_pattern</key>
+                    <string>&lt;a href="(?P&lt;url&gt;https://get.helm.sh/helm-v(?P&lt;version&gt;[0-9\.]*)-darwin-%PLATFORM_ARCH%.tar.gz)".*&gt;MacOS %PLATFORM_ARCH%&lt;/a&gt;\s*\(.*/\s*(?P&lt;checksum&gt;[a-f0-9]*)\)</string>
                 </dict>
             </dict>
             <dict>
@@ -43,6 +41,17 @@
             <dict>
                 <key>Processor</key>
                 <string>EndOfCheckPhase</string>
+            </dict>
+            <dict>
+                <key>Processor</key>
+                <string>io.github.hjuutilainen.SharedProcessors/ChecksumVerifier</string>
+                <key>Arguments</key>
+                <dict>
+                    <key>algorithm</key>
+                    <string>SHA256</string>
+                    <key>checksum</key>
+                    <string>%checksum%</string>
+                </dict>
             </dict>
             <dict>
                 <key>Processor</key>
