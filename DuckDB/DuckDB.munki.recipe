@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Description</key>
+        <string>Downloads the current release version of DuckDB and imports into Munki.</string>
+        <key>Identifier</key>
+        <string>com.github.fseesink.munki.DuckDB</string>
+        <key>Input</key>
+        <dict>
+            <key>NAME</key>
+            <string>DuckDB</string>
+            <key>MUNKI_REPO_SUBDIR</key>
+            <string>apps/%NAME%</string>
+            <key>MUNKI_CATEGORY</key>
+            <string>Databases</string>
+            <key>pkginfo</key>
+            <dict>
+                <key>catalogs</key>
+                <array>
+                    <string>testing</string>
+                </array>
+                <key>category</key>
+                <string>%MUNKI_CATEGORY%</string>
+                <key>description</key>
+                <string>DuckDB is a high-performance analytical database system. It is designed to be fast, reliable, portable, and easy to use.&lt;br&gt;
+                DuckDB provides a rich SQL dialect with support far beyond basic SQL. DuckDB supports arbitrary and nested correlated subqueries, window functions, collations, complex types (arrays, structs, maps), and several extensions designed to make SQL easier to use.&lt;br&gt;&lt;br&gt;
+                DuckDB is available as a standalone CLI application and has clients for Python, R, Java, Wasm, etc., with deep integrations with packages such as pandas and dplyr.</string>
+                <key>developer</key>
+                <string>DuckDB Foundation, Amsterdam NL</string>
+                <key>display_name</key>
+                <string>%NAME%</string>
+                <key>name</key>
+                <string>%NAME%</string>
+                <key>unattended_install</key>
+                <true/>
+            </dict>
+        </dict>
+        <key>MinimumVersion</key>
+        <string>0.2.0</string>
+        <key>ParentRecipe</key>
+        <string>com.github.fseesink.pkg.DuckDB</string>
+        <key>Process</key>
+        <array>
+            <dict>
+                <key>Arguments</key>
+                <dict>
+                    <key>pkg_path</key>
+                    <string>%pkg_path%</string>
+                    <key>repo_subdirectory</key>
+                    <string>%MUNKI_REPO_SUBDIR%</string>
+                </dict>
+                <key>Processor</key>
+                <string>MunkiImporter</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
