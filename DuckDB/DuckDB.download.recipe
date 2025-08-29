@@ -21,7 +21,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>asset_regex</key>
-                    <string>duckdb_cli-osx-universal.gz</string>
+                    <string>duckdb_cli-osx-universal.zip</string>
                     <key>github_repo</key>
                     <string>duckdb/duckdb</string>
                     <key>latest_only</key>
@@ -34,7 +34,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>filename</key>
-                    <string>%NAME%.gz</string>
+                    <string>%NAME%.zip</string>
                 </dict>
             </dict>
             <dict>
