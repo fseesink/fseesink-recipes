@@ -30,7 +30,7 @@
                 <string>%MUNKI_CATEGORY%</string>
                 <key>description</key>
                 <string>The Kubernetes Package Manager.&lt;br&gt;
-                For more information, visit &lt;a href="https://helm.sh"&gt;the Helm website&lt;/a&gt;</string>
+                For more information, visit &lt;a href="https://helm.sh"&gt;the Helm website&lt;/a&gt;.</string>
                 <key>developer</key>
                 <string>The Linux Foundation</string>
                 <key>display_name</key>
