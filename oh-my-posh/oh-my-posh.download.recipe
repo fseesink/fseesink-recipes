@@ -39,7 +39,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>filename</key>
-                    <string>%NAME%</string>
+                    <string>oh-my-posh</string>
                 </dict>
             </dict>
             <dict>
