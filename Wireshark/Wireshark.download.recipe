@@ -8,6 +8,10 @@
 	<key>Identifier</key>
 	<string>com.github.fseesink.download.Wireshark</string>
 	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Wireshark</string>
+	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>Process</key>
