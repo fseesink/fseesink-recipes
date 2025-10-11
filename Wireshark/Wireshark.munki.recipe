@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Builds Wireshark and imports into a Munki repo.</string>
 	<key>Identifier</key>
-	<string>com.github.homebysix.munki.Wireshark</string>
+	<string>com.github.fseesink.munki.Wireshark</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.homebysix.download.Wireshark</string>
+	<string>com.github.fseesink.download.Wireshark</string>
 	<key>Process</key>
 	<array>
 		<dict>

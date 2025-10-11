@@ -6,7 +6,7 @@
 	<string>Downloads the latest stable version of Wireshark (Univeral Binary).
 	</string>
 	<key>Identifier</key>
-	<string>com.github.homebysix.download.Wireshark</string>
+	<string>com.github.fseesink.download.Wireshark</string>
 	<key>Input</key>
 	<key>MinimumVersion</key>
 	<string>0.4.0</string>
