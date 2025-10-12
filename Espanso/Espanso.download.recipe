@@ -39,11 +39,10 @@
 				<string>%NAME%-%version%.zip</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>EndOfCheckPhase</string>
-		</dict>
-		<!-- These geniuses .ZIPped up a .DMG file! So we have to unarchive this -->
+		<!-- These geniuses .ZIPped up a .DMG file! So we have to unarchive this.
+		     And we cannot do this in the same directory if we use purge_destination.
+			 But if we do not use that, we will end up with 2 copies, a .zip and a
+			 .dmg, for each version. So it requires some massaging. -->
 		<dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
@@ -52,10 +51,14 @@
 				<key>archive_path</key>
 				<string>%pathname%</string>
 				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
 				<key>purge_destination</key>
 				<true/>
 			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
 		</dict>
 		<dict>
 			<key>Processor</key>
@@ -63,7 +66,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/Espanso.app</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Espanso.dmg/Espanso.app</string>
 				<key>requirement</key>
 				<string>identifier "com.federicoterzi.espanso" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "6424323YUH"</string>
 			</dict>
@@ -74,7 +77,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/downloads/%filename%/Espanso.app/Contents/Info.plist</string>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/Espanso.dmg/Espanso.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
