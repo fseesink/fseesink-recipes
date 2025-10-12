@@ -57,10 +57,10 @@
 			</dict>
 		</dict>
 		<dict>
-			<key>Arguments</key>
-			<dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
 				<key>input_path</key>
 				<string>%RECIPE_CACHE_DIR%/%NAME%/Espanso.app</string>
 				<key>requirement</key>
