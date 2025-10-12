@@ -43,6 +43,7 @@
 			<key>Processor</key>
 			<string>EndOfCheckPhase</string>
 		</dict>
+		<!-- These geniuses .ZIPped up a .DMG file! So we have to unarchive this -->
 		<dict>
 			<key>Processor</key>
 			<string>Unarchiver</string>
@@ -62,22 +63,22 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Espanso.app</string>
+				<string>%pathname%/Espanso.app</string>
 				<key>requirement</key>
 				<string>identifier "com.federicoterzi.espanso" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "6424323YUH"</string>
 			</dict>
 		</dict>
-		<!-- <dict>
+		<dict>
 			<key>Processor</key>
 			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Espanso.app/Contents/Info.plist</string>
+				<string>%pathname%/Espanso.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
-		</dict> -->
+		</dict>
 	</array>
 </dict>
 </plist>
