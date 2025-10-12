@@ -21,7 +21,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>asset_regex</key>
-				<string>.*\.dmg$</string>
+				<string>.*Mac-Universal\.zip$</string>
 				<key>github_repo</key>
 				<string>espanso/espanso</string>
 				<key>latest_only</key>
