@@ -10,11 +10,9 @@
     <dict>
         <key>NAME</key>
         <string>Hugo</string>
-        <key>PKG_ID</key>
-        <string>com.github.fseesink.pkg.Hugo</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>2.3</string>
     <key>ParentRecipe</key>
     <string>com.github.fseesink.download.Hugo</string>
     <key>Process</key>
