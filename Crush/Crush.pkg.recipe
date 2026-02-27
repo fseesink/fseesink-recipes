@@ -41,8 +41,8 @@
                     </dict>
                 </dict>
             </dict>
-            <!-- DUE TO .tar.gz decompressing to a folder with a version number that changes,
-                 we will search for the file and store it in %found_filename% -->
+            <!-- DUE TO .tar.gz decompressing to a folder with a version number that changes, -->
+            <!-- we will search for the file and store it in %found_filename%                 -->
             <dict>
                 <key>Processor</key>
                 <sring>FileFinder</string>
