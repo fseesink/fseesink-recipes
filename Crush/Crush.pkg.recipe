@@ -45,7 +45,7 @@
             <!-- we will search for the file and store it in %found_filename%                 -->
             <dict>
                 <key>Processor</key>
-                <sring>FileFinder</string>
+                <string>FileFinder</string>
                 <key>Arguments</key>
                 <dict>
                     <key>pattern</key>
