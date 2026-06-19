@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+	"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v2.3.2 (https://github.com/homebysix/recipe-robot)</string>
+	<string
+		>Created with Recipe Robot v2.3.2 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Jan.</string>
 	<key>Identifier</key>
@@ -24,6 +26,8 @@
 				<string>.*\.dmg$</string>
 				<key>github_repo</key>
 				<string>menloresearch/jan</string>
+				<key>latest_only</key>
+				<string>true</string>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
@@ -47,7 +51,8 @@
 				<key>input_path</key>
 				<string>%pathname%/Jan.app</string>
 				<key>requirement</key>
-				<string>identifier "jan.ai.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = F8AH6NHVY5</string>
+				<string
+					>identifier "jan.ai.app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = F8AH6NHVY5</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>

@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+	"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<string
+		>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Ferdium.
-	
+
 DOWNLOAD_ARCH
 - Set to "x64" for x86_64 (default)
 - Set to "arm64" for Apple Silicon
@@ -31,6 +33,8 @@ DOWNLOAD_ARCH
 				<string>.*\-%DOWNLOAD_ARCH%.dmg$</string>
 				<key>github_repo</key>
 				<string>ferdium/ferdium-app</string>
+				<key>latest_only</key>
+				<string>true</string>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
@@ -54,7 +58,8 @@ DOWNLOAD_ARCH
 				<key>input_path</key>
 				<string>%pathname%/Ferdium.app</string>
 				<key>requirement</key>
-				<string>identifier "org.ferdium.ferdium-app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "55E9FPJ93P"</string>
+				<string
+					>identifier "org.ferdium.ferdium-app" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "55E9FPJ93P"</string>
 			</dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
