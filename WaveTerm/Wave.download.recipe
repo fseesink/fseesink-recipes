@@ -14,6 +14,9 @@
 	<dict>
 		<key>NAME</key>
 		<string>Wave</string>
+		<key>DOWNLOAD_ARCH</key>
+        <!-- <string>x64</string> -->
+        <string>arm64</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -23,7 +26,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>asset_regex</key>
-				<string>.*universal.*\.dmg$</string>
+				<string>Wave-darwin-%DOWNLOAD_ARCH%-(?P&lt;version&gt;[0-9\.]*)\.dmg$</string>
 				<key>github_repo</key>
 				<string>wavetermdev/waveterm</string>
 				<key>latest_only</key>

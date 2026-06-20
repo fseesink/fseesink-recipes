@@ -1,35 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+	"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Created with Recipe Robot v2.3.1 (https://github.com/homebysix/recipe-robot)</string>
+	<string
+		>Created with Recipe Robot v2.3.1 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
 	<string>Downloads the latest version of Wave and imports it into Munki.</string>
 	<key>Identifier</key>
 	<string>com.github.fseesink.munki.Wave</string>
 	<key>Input</key>
 	<dict>
-		<key>MUNKI_REPO_SUBDIR</key>
-		<string>apps/%NAME%</string>
 		<key>NAME</key>
 		<string>Wave</string>
+		<key>MUNKI_REPO_SUBDIR</key>
+		<string>apps/%NAME%</string>
+		<key>SUPPORTED_ARCH</key>
+        <!-- <string>x86_64</string> -->
+        <string>arm64</string>
+        <key>DOWNLOAD_ARCH</key>
+        <!-- <string>x64</string> -->
+        <string>arm64</string>
+        <key>MUNKI_CATEGORY</key>
+        <string>Tools</string>
 		<key>pkginfo</key>
 		<dict>
 			<key>catalogs</key>
 			<array>
 				<string>testing</string>
 			</array>
+			<key>category</key>
+                <string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
 			<string>An open-source, cross-platform terminal for seamless workflows</string>
 			<key>developer</key>
 			<string>Command Line Inc</string>
 			<key>display_name</key>
-			<string>Wave</string>
+			<string>%NAME%</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>supported_architectures</key>
+            <array>
+                <string>%SUPPORTED_ARCH%</string>
+            </array>
 			<key>unattended_install</key>
-			<true/>
+			<true />
 		</dict>
 	</dict>
 	<key>MinimumVersion</key>
