@@ -33,7 +33,7 @@
 			<key>category</key>
                 <string>%MUNKI_CATEGORY%</string>
 			<key>description</key>
-			<string>An open-source, cross-platform terminal for seamless workflows</string>
+			<string>An open-source, cross-platform terminal for seamless workflows. Visit https://www.waveterm.dev/ for more details.</string>
 			<key>developer</key>
 			<string>Command Line Inc</string>
 			<key>display_name</key>
