@@ -23,7 +23,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>asset_regex</key>
-				<string>.*Mac-Universal\.zip$</string>
+				<string>.*Mac-Universal\.dmg$</string>
 				<key>github_repo</key>
 				<string>espanso/espanso</string>
 				<key>latest_only</key>
@@ -36,37 +36,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%-%version%.zip</string>
-			</dict>
-		</dict>
-		<!-- These geniuses .ZIPped up a .DMG file! So we have to unarchive this.
-		     And we cannot do this in the same directory if we use purge_destination.
-			 But if we do not use that, we will end up with 2 copies, a .zip and a
-			 .dmg, for each version. So it requires some massaging. -->
-		<dict>
-			<key>Processor</key>
-			<string>Unarchiver</string>
-			<key>Arguments</key>
-			<dict>
-				<key>archive_path</key>
-				<string>%pathname%</string>
-				<key>destination_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>FileMover</string>
-			<key>Arguments</key>
-			<dict>
-				<!-- The .zip decompresses as ./espanso/Espanso.dmg, so we need
-				     to rename and move up a level the file -->
-				<key>source</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/espanso/Espanso.dmg</string>
-				<key>target</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.dmg</string>
+				<string>%NAME%-%version%.dmg</string>
 			</dict>
 		</dict>
 		<dict>
@@ -79,7 +49,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.dmg/Espanso.app</string>
+				<string>%pathname%/Espanso.app</string>
 				<key>requirement</key>
 				<string>identifier "com.federicoterzi.espanso" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "6424323YUH"</string>
 			</dict>
@@ -90,7 +60,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>input_plist_path</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/%NAME%-%version%.dmg/Espanso.app/Contents/Info.plist</string>
+				<string>%pathname%/Espanso.app/Contents/Info.plist</string>
 				<key>plist_version_key</key>
 				<string>CFBundleShortVersionString</string>
 			</dict>
