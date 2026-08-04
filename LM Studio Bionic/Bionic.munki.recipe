@@ -21,13 +21,17 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>RSS reader.</string>
+			<string>Meet Bionic.  An Agent made for Open Models.  Natively local. Built for creativity, work, and code.</string>
 			<key>developer</key>
 			<string>Element Labs Inc</string>
 			<key>display_name</key>
 			<string>Bionic</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>supported_architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
