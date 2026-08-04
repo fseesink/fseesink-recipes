@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of meetily and imports it into Munki.</string>
 	<key>Identifier</key>
-	<string>com.github.fseesink.munki.meetily</string>
+	<string>com.github.fseesink.munki.Meetily</string>
 	<key>Input</key>
 	<dict>
 		<key>MUNKI_REPO_SUBDIR</key>
@@ -35,7 +35,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fseesink.download.meetily</string>
+	<string>com.github.fseesink.download.Meetily</string>
 	<key>Process</key>
 	<array>
 		<dict>

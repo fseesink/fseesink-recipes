@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of meetily and creates a package.</string>
 	<key>Identifier</key>
-	<string>com.github.fseesink.pkg.meetily</string>
+	<string>com.github.fseesink.pkg.Meetily</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fseesink.download.meetily</string>
+	<string>com.github.fseesink.download.Meetily</string>
 	<key>Process</key>
 	<array>
 		<dict>

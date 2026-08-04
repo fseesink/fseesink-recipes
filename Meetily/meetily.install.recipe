@@ -7,7 +7,7 @@
 	<key>Description</key>
 	<string>Installs the latest version of meetily.</string>
 	<key>Identifier</key>
-	<string>com.github.fseesink.install.meetily</string>
+	<string>com.github.fseesink.install.Meetily</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.fseesink.download.meetily</string>
+	<string>com.github.fseesink.download.Meetily</string>
 	<key>Process</key>
 	<array>
 		<dict>
