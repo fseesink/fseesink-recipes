@@ -21,7 +21,10 @@
 				<string>testing</string>
 			</array>
 			<key>description</key>
-			<string>Track your favorite crypto-currency in real-time in your menubar.</string>
+			<string>Set it up once, then every app starts inside its own sandbox – and you can see at any time what it is allowed to touch.&lt;br&gt;
+			BX takes an app you already have - Claude, Claude Code, Cursor, VS Code, your terminal - and starts it inside a sandbox macOS brings along itself. The app is not modified in any way. It keeps its own settings and logins and works in the folder you point it at. Credentials, SSH keys, shell history, mail and password managers drop out of its view.&lt;br&gt;
+			For more information, visit &lt;a href="https://bx-ai.eu/"&gt;the BX website&lt;/a&gt;.
+			</string>
 			<key>developer</key>
 			<string>Dirk Holtwick</string>
 			<key>display_name</key>
